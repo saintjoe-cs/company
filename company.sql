@@ -40,6 +40,10 @@ CREATE TABLE department (
     mgr_start_date date
 );
 
+CREATE TABLE dept_locations (
+    dnumber integer NOT NULL,
+    dlocation character varying(15) NOT NULL
+);
 
 ALTER TABLE department OWNER TO brianc;
 
@@ -57,6 +61,9 @@ COPY department (dname, dnumber, mgr_ssn, mgr_start_date) FROM stdin;
 
 ALTER TABLE ONLY department
     ADD CONSTRAINT department_dname_key UNIQUE (dname);
+
+ALTER TABLE ONLY dept_locations
+    ADD CONSTRAINT dept_locations_pkey PRIMARY KEY (dnumber, dlocation);
 
 
 --
