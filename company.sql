@@ -33,6 +33,25 @@ SET default_with_oids = false;
 -- Name: department; Type: TABLE; Schema: public; Owner: brianc; Tablespace: 
 --
 
+CREATE TABLE employee (
+    fname character varying(15) NOT NULL,
+    minit character(1),
+    lname character varying(15) NOT NULL,
+    ssn character(9) NOT NULL,
+    bdate date,
+    address character varying(30),
+    sex character(1),
+    salary numeric(10,2),
+    super_ssn character(9),
+    dno integer NOT NULL
+);
+
+
+ALTER TABLE ONLY employee
+    ADD CONSTRAINT employee_pkey PRIMARY KEY (ssn);
+
+
+
 CREATE TABLE department (
     dname character varying(15) NOT NULL,
     dnumber integer NOT NULL,
