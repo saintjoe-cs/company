@@ -64,6 +64,13 @@ CREATE TABLE dept_locations (
     dlocation character varying(15) NOT NULL
 );
 
+CREATE TABLE works_on (
+    essn integer,
+    pno integer,
+    hours integer
+);
+
+
 ALTER TABLE department OWNER TO brianc;
 
 --
