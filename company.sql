@@ -64,6 +64,15 @@ CREATE TABLE dept_locations (
     dlocation character varying(15) NOT NULL
 );
 
+CREATE TABLE dependent (
+    essn character(9) NOT NULL,
+    dependent_name character varying(15) NOT NULL,
+    sex character(1),
+    bdate date,
+    relationship character varying(8)
+);
+
+
 ALTER TABLE department OWNER TO brianc;
 
 --
