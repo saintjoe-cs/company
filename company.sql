@@ -66,10 +66,15 @@ CREATE TABLE dept_locations (
 );
 
 CREATE TABLE works_on (
-    essn integer,
-    pno integer,
-    hours integer
+    essn character not NULL,
+    pno integer not NULL,
+    hours integer not NULL
 );
+
+ALTER TABLE ONLY works_on
+    ADD CONSTRAINT works_on_pkey PRIMARY KEY (essn,pno);
+
+
 
 
 ALTER TABLE department OWNER TO brianc;
