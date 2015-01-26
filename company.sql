@@ -71,6 +71,12 @@
 -    bdate date,
 -    relationship character varying(8)
 -);
+
+CREATE TABLE WORKS_ON (
+	Essn character(9) NOT NULL,
+	Pno integer NOT NULL,
+	Hours decimal(3,1) NOT NULL
+);
 -
 -
 -ALTER TABLE department OWNER TO brianc;
@@ -101,7 +107,8 @@
 -ALTER TABLE ONLY department
 -    ADD CONSTRAINT department_pkey PRIMARY KEY (dnumber);
 -
--
+-ALTER TABLE ONLY WORKS_ON
+	ADD CONSTRAINT WORKS_ON PRIMARY KEY (Essn, Pno);
 ---
 --- Name: public; Type: ACL; Schema: -; Owner: postgres
 ---
