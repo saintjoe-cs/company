@@ -87,7 +87,7 @@ CREATE TABLE PROJECT (
 -
 
 -
--ALTER TABLE department OWNER TO brianc;
+--ALTER TABLE department OWNER TO brianc;
 -
 ---
 --- Data for Name: department; Type: TABLE DATA; Schema: public; Owner: brianc
