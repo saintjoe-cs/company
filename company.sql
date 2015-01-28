@@ -77,7 +77,15 @@ CREATE TABLE WORKS_ON (
 	Pno integer NOT NULL,
 	Hours decimal(3,1) NOT NULL
 );
+
+CREATE TABLE PROJECT (
+	Pname charater varying(15) NOT NULL,
+	Pnumber integer NOT NULL,
+	Plovation character varying(15) NOT NULL,
+	Dnum integer NOT NULL
+);
 -
+
 -
 -ALTER TABLE department OWNER TO brianc;
 -
