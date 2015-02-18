@@ -7,7 +7,7 @@
 ** Replace every instance of brianc with your Postgres username
 * Populate your new database psql -d company-test -f company-populated.sql
 
-To "hand in" your work:
+###To "hand in" your work:
 * Create a new repo cmp341-test1
 * Use pg_dump to create company-test1.sql
 * Push the file to the repo
