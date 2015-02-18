@@ -4,7 +4,7 @@
 * Pull the repo to get fresh files
 * Move the company-populated.sql file __outside__ of your repo space
 * Edit the file
-** Replace every instance of brianc with your Postgres username
+- Replace every instance of brianc with your Postgres username
 * Populate your new database _psql -d company-test -f company-populated.sql_
 
 ###To "hand in" your work:
