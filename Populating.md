@@ -1,6 +1,6 @@
 ###Creating your exam database
 
-* Create your database (for the test, company_test) with createdb
+* Create your database (for this test, company-test) with createdb
 * Pull the repo to get fresh files
 * Move the company-populated.sql file __outside__ of your repo space
 * Edit the file
