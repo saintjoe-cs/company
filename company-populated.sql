@@ -152,7 +152,7 @@ COPY dept_locations (dnumber, dlocation) FROM stdin;
 4	Stafford
 5	Bellaire
 5	Sugarland
-5	Houston    
+5	Houston
 \.
 
 
