@@ -12,3 +12,8 @@
 * Use _pg_dump_ to create company-test1.sql
 * Push the file to the repo
 * Put the link to the repo on the exam
+
+###To change ownership of .sql dump
+* Load in vi
+* :1,$s/brianc/<your pg name>/g
+* save
